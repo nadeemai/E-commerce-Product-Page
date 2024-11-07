@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Product Section -->
+    <div class="product">
+        <img src="product-image.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-title">Sample Product</h2>
+        <p class="product-description">This is a sample product description to provide details about the product.</p>
+        <span class="product-price">$29.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+            <span>Total: $<span id="cart-total">0.00</span></span>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
